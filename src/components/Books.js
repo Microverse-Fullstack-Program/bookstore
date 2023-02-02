@@ -1,11 +1,11 @@
-import React, { useState } from "react";
-import Book from "./Book";
-import NewBook from "./AddBook";
+import React, { useState } from 'react';
+import Book from './Book';
+import NewBook from './AddBook';
 
 const Books = () => {
   const [book] = useState({
-    title: "Book 1",
-    author: "Author 1",
+    title: 'Book 1',
+    author: 'Author 1',
   });
 
   return (
