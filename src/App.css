@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+body {
+  background-color: rgb(249, 252, 248);
+}
+
+.wrapper {
+  width: 90%;
+  height: max-content;
+  margin: auto;
+  margin-top: 2.5%;
+  padding: 5px;
+  box-shadow: 0 10px 17px -5px #f5f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 7.5vw;
+  background-color: #fff;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 45px;
+  padding: 1rem;
+  box-shadow: 0 10px 17px -5px #96b498;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.container {
+  width: 100%;
+  height: 100vw;
+  margin: 5% 0;
+  background-color: #fff;
+  box-shadow: 0 10px 17px -5px #96b498;
+}
+
+.books-wrapper,
+.category-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding: 1.5rem 0 0 1.5rem;
+}
+
+.book-list {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.book,
+.book-details {
+  display: flex;
+  gap: 75px;
+}
+
+.category-wrapper button {
+  width: max-content;
+  padding: 5px 10px;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+
+.book-form {
+  display: flex;
+  gap: 33px;
+}
+
+.book-form input {
+  padding: 5px;
+}
+
+.book button,
+.book-form button {
+  padding: 5px 15px;
+}
