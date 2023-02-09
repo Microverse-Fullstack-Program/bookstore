@@ -4,7 +4,7 @@
     <img src="bookstore.JPG" alt="logo" width="500"  height="300" />
   <br/>
 
-  <h3><b>Calculator APP Developed Using React </b></h3>
+  <h3><b>Bookstore website Using React & Redux </b></h3>
 
 </div>
 
