@@ -34,7 +34,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Math Magicians] <a name="about-project"></a>
+# 📖 [Bookstore Website] <a name="about-project"></a>
 
 > **Bookstore Website** The Bookstore is a website similar to the "Awesome Books" website. It is a simplified version of it that allows user to:
 > - Display a list of books
