@@ -33,7 +33,7 @@ const AddBook = createAsyncThunk(ADD_BOOK, async (book) => {
       item_id: book.id,
       title: book.title,
       author: book.author,
-      category: book.genre,
+      category: book.category,
     }),
   });
   return book;

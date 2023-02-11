@@ -8,7 +8,7 @@ const AddBookForm = () => {
     id: '',
     title: '',
     author: '',
-    genre: '',
+    category: '',
   });
 
   const dispatch = useDispatch();
@@ -27,7 +27,7 @@ const AddBookForm = () => {
     setUserInput({
       title: '',
       author: '',
-      genre: '',
+      category: '',
     });
   };
 
@@ -56,7 +56,7 @@ const AddBookForm = () => {
         <select
           className="genre-input"
           type="text"
-          name="genre"
+          name="category"
           value={userInput.genre}
           placeholder="Book Genre"
           onChange={handleInput}
