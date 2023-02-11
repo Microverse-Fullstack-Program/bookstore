@@ -20,14 +20,14 @@ const Books = () => {
   }
 
   return (
-    <div className="books-wrapper">
+    <>
       {bookList.map((bk) => (
         <div key={bk.id}>
           <Book book={bk} />
         </div>
       ))}
       <AddBookForm />
-    </div>
+    </>
   );
 };
 
