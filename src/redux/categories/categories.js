@@ -1,10 +1,8 @@
 // Actions
 const STATUS = 'CATEGORIES/BOOK_STATUS';
 
-const initStateCategories = [];
-
 // Reducer
-const ReducerCategories = (state = initStateCategories, action) => {
+const ReducerCategories = (state = [], action) => {
   switch (action.type) {
     case STATUS:
       return 'Under construction';
