@@ -1,11 +1,12 @@
 import { Outlet, NavLink } from 'react-router-dom';
+import { BsPersonFill } from 'react-icons/bs';
 
 const Layout = () => {
   const navLinkStyle = ({ isActive }) => {
     const activeLinkStyle = {
       fontWeight: isActive ? 'bold' : 'normal',
       textDecoration: isActive ? 'underline' : 'none',
-      color: isActive ? '#7c1f1f' : '#0e0ae6',
+      color: isActive ? '#7c0808' : '#a8a8a8',
     };
     return activeLinkStyle;
   };
@@ -22,6 +23,7 @@ const Layout = () => {
             CATEGORIES
           </NavLink>
         </nav>
+        <BsPersonFill />
       </header>
       <main className="container">
         <Outlet />
