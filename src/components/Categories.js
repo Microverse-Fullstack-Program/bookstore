@@ -1,7 +1,21 @@
-const Category = () => (
-  <div className="category-wrapper">
-    <button type="button">Check status</button>
-  </div>
-);
+import React from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { checkStatus } from '../redux/categories/categories';
 
-export default Category;
+const Categories = () => {
+  const status = useSelector((state) => state.categories);
+  const dispatch = useDispatch();
+
+  const handleCheckStatus = () => {
+    dispatch(checkStatus());
+  };
+
+  return (
+    <div className="btn-categories">
+      <button type="button" onClick={handleCheckStatus}>Check Status</button>
+      <p>{status}</p>
+    </div>
+  );
+};
+
+export default Categories;

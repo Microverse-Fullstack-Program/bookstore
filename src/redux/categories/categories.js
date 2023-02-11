@@ -14,8 +14,9 @@ const ReducerCategories = (state = initStateCategories, action) => {
 };
 
 // Action creator
-export const Status = () => ({
+export const checkStatus = (payload) => ({
   type: STATUS,
+  payload,
 });
 
 export default ReducerCategories;
