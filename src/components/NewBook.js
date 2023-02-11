@@ -27,6 +27,7 @@ const AddBookForm = () => {
     setUserInput({
       title: '',
       author: '',
+      genre: '',
     });
   };
 
@@ -52,6 +53,27 @@ const AddBookForm = () => {
           required
           onChange={handleInput}
         />
+        <select
+          className="genre-input"
+          type="text"
+          name="genre"
+          value={userInput.genre}
+          placeholder="Book Genre"
+          onChange={handleInput}
+        >
+          <option value="Unknown"> Genre of Book</option>
+          <option value="Fiction">Fiction</option>
+          <option value="Non Fiction">Non Fiction</option>
+          <option value="Narrative">Narrative</option>
+          <option value="Short Story">Short Story</option>
+          <option value="Non Fiction">Novel</option>
+          <option value="Narrative">Poetry</option>
+          <option value="Short Story">Mystery</option>
+          <option value="Drama">Drama</option>
+          <option value="History">History</option>
+          <option value="Legend">Legend</option>
+        </select>
+
         <button type="submit" className="addBtn">
           {' '}
           Add Book

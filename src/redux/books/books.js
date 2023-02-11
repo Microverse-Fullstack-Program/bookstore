@@ -1,7 +1,8 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 // API URL
-const APIURL = 'https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/vGqwwjT4O4Gm9D3HZMDv/books';
+const ApiKey = 'vGqwwjT4O4Gm9D3HZMDv';
+const APIURL = `https://us-central1-bookstore-api-e63c8.cloudfunctions.net/bookstoreApi/apps/${ApiKey}/books`;
 
 // Actions
 const ADD_BOOK = 'bookstore/books/ADD_BOOK';
@@ -32,7 +33,7 @@ const AddBook = createAsyncThunk(ADD_BOOK, async (book) => {
       item_id: book.id,
       title: book.title,
       author: book.author,
-      category: 'Fiction',
+      category: book.category,
     }),
   });
   return book;
