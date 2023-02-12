@@ -17,7 +17,7 @@ const Layout = () => {
         <div className="nav-wrapper">
           <h2>BookStore CMS</h2>
           <nav className="nav-bar">
-            <NavLink to="/" style={navLinkStyle}>
+            <NavLink to="/" class="navLink" style={navLinkStyle}>
               BOOKS
             </NavLink>
             <NavLink to="/categories" style={navLinkStyle}>

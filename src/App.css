@@ -6,7 +6,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: RobotoSlab;
+  font-family: RobotoSlab, sans-serif;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -16,7 +16,6 @@
 
 body {
   background-color: #e6e6e6;
-  
 }
 
 .wrapper {
@@ -48,9 +47,9 @@ body {
 }
 
 .nav-wrapper h2 {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 1.875rem;
-  color: #0290ff
+  color: #0290ff;
 }
 
 .nav-bar {
@@ -59,9 +58,9 @@ body {
   gap: 1rem;
 }
 
-.nav-bar NavLink {
+.nav-bar .navLink {
   opacity: 0.15;
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-size: 0.813rem;
   letter-spacing: 1.9px;
 }
@@ -151,7 +150,7 @@ body {
 }
 
 .percentage {
-  font-family: Montserrat;
+  font-family: Montserrat, sans-serif;
   font-weight: normal;
   font-size: 2rem;
   color: var(--black-two);
@@ -184,7 +183,6 @@ body {
 }
 
 .process button {
-  font-family: RobotoSlab;
   font-size: 0.813rem;
   letter-spacing: 0.5px;
   text-align: center;
@@ -201,7 +199,6 @@ body {
   gap: 23px;
   margin: 4.25rem 6rem;
   padding: 0.5rem;
-
 }
 
 .form-wrapper h3 {
@@ -224,12 +221,13 @@ body {
   font-weight: normal;
   padding: 0.85rem;
 }
+
 ::placeholder {
   opacity: 0.5;
 }
 
 .title-input {
-  width: 30.25rem; 
+  width: 30.25rem;
 }
 
 .author-input {
@@ -249,7 +247,6 @@ body {
   padding: 0.85rem;
   border-radius: 3px;
   background-color: #0290ff;
-  font-family: RobotoSlab;
   font-size: 0.813rem;
   letter-spacing: 0.5px;
   text-align: center;
