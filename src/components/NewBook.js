@@ -8,7 +8,7 @@ const AddBookForm = () => {
     id: '',
     title: '',
     author: '',
-    genre: '',
+    category: '',
   });
 
   const dispatch = useDispatch();
@@ -27,16 +27,16 @@ const AddBookForm = () => {
     setUserInput({
       title: '',
       author: '',
-      genre: '',
+      category: '',
     });
   };
 
   return (
     <div className="form-wrapper">
-      <h1>ADD NEW BOOK</h1>
+      <h3>ADD NEW BOOK</h3>
       <form className="book-form" onSubmit={handleSubmit}>
         <input
-          className="book-input"
+          className="title-input"
           type="text"
           name="title"
           value={userInput.title}
@@ -56,7 +56,7 @@ const AddBookForm = () => {
         <select
           className="genre-input"
           type="text"
-          name="genre"
+          name="category"
           value={userInput.genre}
           placeholder="Book Genre"
           onChange={handleInput}
