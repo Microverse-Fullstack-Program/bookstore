@@ -6,22 +6,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: RobotoSlab;
-  font-weight: bold;
-  font-stretch: normal;
+  font-family: 'Balsamiq Sans', sans-serif;
+  font-weight: 600;
   font-style: normal;
-  line-height: normal;
-  letter-spacing: normal;
 }
 
 body {
-  background-color: #f3f2f2;
+  background-color: rgb(249, 252, 248);
 }
 
 .wrapper {
-  width: 100%;
+  width: 90%;
   height: max-content;
   margin: auto;
+  margin-top: 2.5%;
   padding: 5px;
   box-shadow: 0 10px 17px -5px #f5f0f0;
   display: flex;
@@ -30,26 +28,14 @@ body {
 
 .header {
   width: 100%;
-  height: 6rem;
-  margin-bottom: 2rem;
+  height: 7.5vw;
   background-color: #fff;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1.25rem 6.25rem 1.75rem 6.25rem;
-  border-bottom: 1px solid #b1b0b0;
-}
-
-.nav-wrapper {
-  display: flex;
   justify-content: flex-start;
+  align-items: center;
   gap: 45px;
-}
-
-.nav-wrapper h2 {
-  font-family: Montserrat;
-  font-size: 1.875rem;
-  color: #0290ff
+  padding: 1rem;
+  box-shadow: 0 10px 17px -5px #96b498;
 }
 
 .nav-bar {
@@ -58,153 +44,43 @@ body {
   gap: 1rem;
 }
 
-.nav-bar NavLink {
-  opacity: 0.15;
-  font-family: Montserrat;
-  font-size: 0.813rem;
-  letter-spacing: 1.9px;
-}
-
-.personIcon {
-  align-self: flex-end;
-}
-
-.book-wrapper {
-  display: grid;
-  grid-template-columns: 3.5fr 1fr 2fr;
-  width: auto;
-  height: auto;
-  margin: 1.25rem 6rem;
-  padding: 1.5rem 1.25rem 1.5rem 2.5rem;
-  border-radius: 4px;
-  border: solid 1px #e8e8e8;
+.container {
+  width: 100%;
+  height: 100vw;
+  margin: 5% 0;
   background-color: #fff;
+  box-shadow: 0 10px 17px -5px #96b498;
 }
 
-.book {
+.books-wrapper,
+.category-wrapper {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-}
-
-.book-detail {
-  display: flex;
-  flex-direction: column;
-  gap: 5px;
-}
-
-.bk-genre {
-  opacity: 0.5;
-  font-size: 0.85rem;
-  color: var(--black-two);
-}
-
-.bk-author {
-  font-size: 0.85rem;
-  color: #4386bf;
-}
-
-.bk-title {
-  font-size: 1.35rem;
-  color: var(--black-two);
-}
-
-.bookBtn {
-  display: flex;
-  gap: 15px;
-  width: 5rem;
-  height: 2rem;
-}
-
-.bookBtn button {
-  font-size: 0.875rem;
-  background-color: #fff;
-  color: #4386bf;
-}
-
-.bookBtn :nth-child(2) {
-  border-left: 1px solid #ecebe8;
-  border-right: 1px solid #ecebe8;
-  padding: 0 0.85rem;
-}
-
-.book-wrapper button {
-  border: none;
-}
-
-.bk-status {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  border-right: 1px solid #ecebe8;
-}
-
-.pie-graph {
-  height: 70px;
-  width: 70px;
-  margin-right: 20px;
-  border: 5px solid #0290ff;
-  border-left: 5px solid rgb(206, 204, 204);
-  border-radius: 50%;
-  transform: rotate(40deg);
-}
-
-.percentage {
-  font-family: Montserrat;
-  font-weight: normal;
-  font-size: 2rem;
-  color: var(--black-two);
-}
-
-.completed {
-  opacity: 0.5;
-  font-size: 0.875rem;
-  color: var(--black-two);
-}
-
-.process {
-  padding-left: 3.35rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   gap: 35px;
+  padding: 1.5rem 0 0 1.5rem;
 }
 
-.curr-chapter {
+.book-list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 17px;
 }
 
-.chapter {
-  font-size: 1rem;
-  letter-spacing: -0.4px;
-  color: var(--black-two);
+.book,
+.book-details {
+  display: flex;
+  gap: 75px;
 }
 
-.process button {
-  font-family: RobotoSlab;
-  font-size: 0.813rem;
-  letter-spacing: 0.5px;
-  text-align: center;
-  color: #fff;
+.category-wrapper button {
   width: max-content;
-  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
-  border-radius: 3px;
-  background-color: #0290ff;
+  padding: 5px 10px;
 }
 
 .form-wrapper {
   display: flex;
   flex-direction: column;
   gap: 23px;
-  margin: 4.25rem 6rem;
-}
-
-.form-wrapper h1 {
-  font-size: 1.25rem;
-  letter-spacing: -0.18px;
-  color: #888;
 }
 
 .book-form {
@@ -212,43 +88,11 @@ body {
   gap: 33px;
 }
 
-.book-form input,
-.book-form option {
-  border-radius: 4px;
-  border: solid 1px #e8e8e8;
-  background-color: #fff;
+.book-form input {
+  padding: 5px;
 }
 
-.title-input {
-  padding: 0.85rem 25.25rem 0.85rem 1.05rem;
-}
-
-.author-input {
-  padding: 0.85rem 8.25rem 0.85rem 1.05rem;
-}
-
-.genre-input {
-  padding: 0.85rem 6.25rem 0.85rem 1.05rem;
-}
-
-.book-form .addBtn {
-  padding: 0.85rem 1.18rem 0.85rem 1.35rem;
-  border-radius: 3px;
-  background-color: #0290ff;
-  font-family: RobotoSlab;
-  font-size: 0.813rem;
-  letter-spacing: 0.5px;
-  text-align: center;
-  color: #fff;
-}
-
-.btn-categories {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
-  margin: 4.25rem 6rem;
-}
-
-.btn-categories button {
-  width: max-content;
+.book button,
+.book-form button {
+  padding: 5px 15px;
 }

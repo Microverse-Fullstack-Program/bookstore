@@ -9,49 +9,20 @@ const Book = ({ book }) => {
   };
 
   return (
-    <div className="book-wrapper">
-      <div className="book">
-        <div className="book-detail">
-          <p className="bk-genre">
-            {' '}
-            {book.category}
-            {' '}
-          </p>
-          <h2 className="bk-title">
-            {' '}
-            {book.title}
-            {' '}
-          </h2>
-          <p className="bk-author">
-            {' '}
-            {book.author}
-            {' '}
-          </p>
-        </div>
-        <div className="bookBtn">
-          <button type="button"> Comments </button>
-          <button type="button" onClick={handleRemoveBook}>
-            Remove
-          </button>
-          <button type="button"> Edit </button>
-        </div>
-      </div>
-
-      <div className="bk-status">
-        <div className="pie-graph"> </div>
-        <div className="completed-percentage">
-          <p className="percentage">64%</p>
-          <p className="completed">Completed</p>
-        </div>
-      </div>
-
-      <div className="process">
-        <div className="curr-chapter">
-          <p className="completed">Current Chapter</p>
-          <p className="chapter">Chapter  17</p>
-        </div>
-        <button type="button">UPDATE PROCESS</button>
-      </div>
+    <div className="book-details">
+      <p className="bk-title">
+        {' '}
+        {book.title}
+        {' '}
+      </p>
+      <p className="bk-author">
+        {' '}
+        {book.author}
+        {' '}
+      </p>
+      <button type="button" onClick={handleRemoveBook}>
+        Remove
+      </button>
     </div>
   );
 };
@@ -60,7 +31,6 @@ Book.propTypes = {
   book: PropTypes.shape({
     title: PropTypes.string,
     author: PropTypes.string,
-    category: PropTypes.string,
     id: PropTypes.string,
   }).isRequired,
 };
