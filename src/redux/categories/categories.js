@@ -16,5 +16,4 @@ export const checkStatus = (payload) => ({
   type: STATUS,
   payload,
 });
-
 export default ReducerCategories;
