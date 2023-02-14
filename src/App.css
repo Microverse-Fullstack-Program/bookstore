@@ -122,7 +122,7 @@ body {
 .bookBtn button {
   font-size: 1.175rem;
   background-color: #fff;
-  color: #a5cece;
+  color: #a5cece73;
 }
 
 .bookBtn :nth-child(2) {
