@@ -7,7 +7,6 @@
   padding: 0;
   box-sizing: border-box;
   font-family: RobotoSlab, sans-serif;
-  font-weight: bold;
   font-stretch: normal;
   font-style: normal;
   line-height: normal;
@@ -15,7 +14,7 @@
 }
 
 body {
-  background-color: #e6e6e6;
+  background-color: #fafafa;
 }
 
 .wrapper {
@@ -95,18 +94,23 @@ body {
 
 .bk-genre {
   opacity: 0.5;
-  font-size: 0.85rem;
-  color: var(--black-two);
+  font-size: 1.175rem;
+  font-family: Montserrat, sans-serif;
+  color: #121212
 }
 
 .bk-author {
-  font-size: 0.85rem;
-  color: #4386bf;
+  color: #a5cece;
+  font-weight: 300;
+  font-size: 1.175rem;
+  fill-opacity: 0.5;
 }
 
 .bk-title {
   font-size: 1.35rem;
-  color: var(--black-two);
+  color: #121212;
+  font-size: 1.75rem;
+  font-family: RobotoSlab;
 }
 
 .bookBtn {
@@ -117,9 +121,9 @@ body {
 }
 
 .bookBtn button {
-  font-size: 0.875rem;
+  font-size: 1.175rem;
   background-color: #fff;
-  color: #4386bf;
+  color: #a5cece;
 }
 
 .bookBtn :nth-child(2) {
@@ -150,16 +154,15 @@ body {
 }
 
 .percentage {
-  font-family: Montserrat, sans-serif;
-  font-weight: normal;
-  font-size: 2rem;
-  color: var(--black-two);
+  font-weight: 300;
+  font-size: 2.75rem;
+  color: #626161;
 }
 
 .completed {
   opacity: 0.5;
-  font-size: 0.875rem;
-  color: var(--black-two);
+  font-size: 1.125rem;
+  color: #a8a1a1;
 }
 
 .process {
@@ -174,21 +177,24 @@ body {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  font-weight: normal;
 }
 
 .chapter {
-  font-size: 1rem;
+  font-weight: 300;
+  font-size: 1.55rem;
   letter-spacing: -0.4px;
-  color: var(--black-two);
+  color: #918f8f;
 }
 
 .process button {
-  font-size: 0.813rem;
+  font-size: 0.85rem;
   letter-spacing: 0.5px;
+  font-weight: 300;
   text-align: center;
-  color: #fff;
+  color: #e4e1e1;
   width: max-content;
-  padding: 0.438rem 1.188rem 0.5rem 1.375rem;
+  padding: 0.85rem 2.5rem;
   border-radius: 3px;
   background-color: #0290ff;
 }
@@ -245,7 +251,7 @@ body {
 .book-form .addBtn {
   width: 8.57rem;
   padding: 0.85rem;
-  border-radius: 3px;
+  border: none;
   background-color: #0290ff;
   font-size: 0.813rem;
   letter-spacing: 0.5px;
