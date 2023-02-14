@@ -47,7 +47,7 @@ const Book = ({ book }) => {
 
       <div className="process">
         <div className="curr-chapter">
-          <p className="completed">Current Chapter</p>
+          <p className="completed">CURRENT CHAPTER</p>
           <p className="chapter">Chapter  17</p>
         </div>
         <button type="button">UPDATE PROCESS</button>
