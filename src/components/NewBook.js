@@ -8,7 +8,7 @@ const AddBookForm = () => {
     id: '',
     title: '',
     author: '',
-    genre: '',
+    category: '',
   });
 
   const dispatch = useDispatch();
@@ -27,16 +27,16 @@ const AddBookForm = () => {
     setUserInput({
       title: '',
       author: '',
-      genre: '',
+      category: '',
     });
   };
 
   return (
     <div className="form-wrapper">
-      <h1>ADD NEW BOOK</h1>
+      <h3>ADD NEW BOOK</h3>
       <form className="book-form" onSubmit={handleSubmit}>
         <input
-          className="book-input"
+          className="title-input"
           type="text"
           name="title"
           value={userInput.title}
@@ -56,8 +56,8 @@ const AddBookForm = () => {
         <select
           className="genre-input"
           type="text"
-          name="genre"
-          value={userInput.genre}
+          name="category"
+          value={userInput.category}
           placeholder="Book Genre"
           onChange={handleInput}
         >
@@ -66,9 +66,9 @@ const AddBookForm = () => {
           <option value="Non Fiction">Non Fiction</option>
           <option value="Narrative">Narrative</option>
           <option value="Short Story">Short Story</option>
-          <option value="Non Fiction">Novel</option>
-          <option value="Narrative">Poetry</option>
-          <option value="Short Story">Mystery</option>
+          <option value="Novel">Novel</option>
+          <option value="Poetry">Poetry</option>
+          <option value="Mystery">Mystery</option>
           <option value="Drama">Drama</option>
           <option value="History">History</option>
           <option value="Legend">Legend</option>
