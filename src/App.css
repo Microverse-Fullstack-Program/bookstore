@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: RobotoSlab, sans-serif;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+}
+
+body {
+  background-color: #fafafa;
+}
+
+.wrapper {
+  width: 100%;
+  height: max-content;
+  margin: auto;
+  padding: 5px;
+  box-shadow: 0 10px 17px -5px #f5f0f0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  height: 6rem;
+  margin-bottom: 2rem;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 6.25rem 1.75rem 6.25rem;
+  border-bottom: 1px solid #b1b0b0;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  gap: 45px;
+}
+
+.nav-wrapper h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.875rem;
+  color: #0290ff;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-bar .navLink {
+  opacity: 0.15;
+  font-family: Montserrat, sans-serif;
+  font-size: 0.813rem;
+  letter-spacing: 1.9px;
+}
+
+.personIcon {
+  align-self: flex-end;
+}
+
+.book-wrapper {
+  display: grid;
+  grid-template-columns: 3.5fr 1.5fr 2fr;
+  width: auto;
+  height: auto;
+  margin: 1.25rem 6rem;
+  padding: 1.5rem 1.25rem 1.5rem 2.5rem;
+  border-radius: 4px;
+  border: solid 1px #e8e8e8;
+  background-color: #fff;
+}
+
+.book {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.book-detail {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.bk-genre {
+  opacity: 0.5;
+  font-size: 1.175rem;
+  font-family: Montserrat, sans-serif;
+  color: #121212;
+}
+
+.bk-author {
+  color: #a5cece;
+  font-weight: 300;
+  font-size: 1.175rem;
+  fill-opacity: 0.5;
+}
+
+.bk-title {
+  color: #121212;
+  font-size: 1.75rem;
+  font-family: RobotoSlab, sans-serif;
+}
+
+.bookBtn {
+  display: flex;
+  gap: 15px;
+  width: 5rem;
+  height: 2rem;
+}
+
+.bookBtn button {
+  font-size: 1.175rem;
+  background-color: #fff;
+  color: #a5cece73;
+}
+
+.bookBtn :nth-child(2) {
+  border-left: 1px solid #ecebe8;
+  border-right: 1px solid #ecebe8;
+  padding: 0 0.85rem;
+}
+
+.book-wrapper button {
+  border: none;
+}
+
+.bk-status {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-right: 1px solid #ecebe8;
+}
+
+.pie-graph {
+  height: 70px;
+  width: 70px;
+  margin-right: 20px;
+  border: 5px solid #0290ff;
+  border-left: 5px solid rgb(206, 204, 204);
+  border-radius: 50%;
+  transform: rotate(40deg);
+}
+
+.percentage {
+  font-weight: 300;
+  font-size: 2.75rem;
+  color: #626161;
+}
+
+.completed {
+  opacity: 0.5;
+  font-size: 1.125rem;
+  color: #a8a1a1;
+}
+
+.process {
+  padding-left: 3.35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 35px;
+}
+
+.curr-chapter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: normal;
+}
+
+.chapter {
+  font-weight: 300;
+  font-size: 1.55rem;
+  letter-spacing: -0.4px;
+  color: #918f8f;
+}
+
+.process button {
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  font-weight: 300;
+  text-align: center;
+  color: #e4e1e1;
+  width: max-content;
+  padding: 0.85rem 2.5rem;
+  border-radius: 3px;
+  background-color: #0290ff;
+}
+
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin: 4.25rem 6rem;
+  padding: 0.5rem;
+}
+
+.form-wrapper h3 {
+  font-size: 1.25rem;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.book-form {
+  display: flex;
+  gap: 33px;
+}
+
+.title-input,
+.author-input,
+.genre-input {
+  border-radius: 4px;
+  background: #fff;
+  border: solid 2px #dbd8d8;
+  font-weight: normal;
+  padding: 0.85rem;
+}
+
+::placeholder {
+  opacity: 0.5;
+}
+
+.title-input {
+  width: 30.25rem;
+}
+
+.author-input {
+  width: 15.25rem;
+}
+
+.genre-input {
+  width: 12.75rem;
+}
+
+.genre-input option {
+  font-weight: normal;
+}
+
+.book-form .addBtn {
+  width: 8.57rem;
+  padding: 0.85rem;
+  border: none;
+  background-color: #0290ff;
+  font-size: 0.813rem;
+  letter-spacing: 0.5px;
+  text-align: center;
+  color: #fff;
+}
+
+.btn-categories {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+  margin: 1.25rem 6rem;
+}
+
+.btn-categories button {
+  width: max-content;
+  background-color: #0290ff;
+  color: #fff;
+  padding: 0.85rem 1.25rem;
+}
+
+.btn-categories p {
+  background-color: #fff;
+  padding: 1.25rem 0.85rem;
+}
